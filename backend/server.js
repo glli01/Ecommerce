@@ -1,7 +1,9 @@
-const express = require("express"); // common JS (not esModules)
-const products = require("./data/products");
-const dotenv = require("dotenv");
+import express from "express"; // common JS (not esModules)
+import products from "./data/products.js";
+import dotenv from "dotenv";
+
 dotenv.config();
+
 const app = express();
 
 const PORT = process.env.PORT || 5000;
