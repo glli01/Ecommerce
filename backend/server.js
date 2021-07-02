@@ -1,8 +1,11 @@
 import express from "express"; // common JS (not esModules)
 import products from "./data/products.js";
 import dotenv from "dotenv";
+import connectDB from "./config/db.js";
 
 dotenv.config();
+
+connectDB();
 
 const app = express();
 
